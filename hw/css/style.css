@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 main {
-    counter-reset: list1;
+    counter-reset: numeration;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -47,8 +47,8 @@ main {
     color: white;
 }
 .item::before {
-    counter-increment: list1;
-    content: counter(list1, upper-roman);
+    counter-increment: numeration;
+    content: counter(numeration, upper-roman);
 }
 .container div:last-child .item {
     background-color: #003380;
